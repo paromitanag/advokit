@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF9800"
+        android:alpha="0.6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Advo Kit"
+            android:textSize="70dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:cardCornerRadius="25dp"
+            app:cardBackgroundColor="@color/black"
+            android:alpha="1.5"
+            android:layout_marginBottom="-20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome"
+                    android:textColor="#FF9800"
+                    android:textStyle="bold"
+                    android:textSize="40dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please login with your information"
+                    android:textColor="#FF9800"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Address"
+                    android:textSize="20dp"
+                    android:textColor="#FF9800"
+                    android:textStyle="bold" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:inputType="textEmailAddress"
+                    android:drawableEnd="@drawable/baseline_done_24"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textSize="20dp"
+                    android:textColor="#FF9800"
+                    android:textStyle="bold" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:inputType="textPassword"
+                    android:drawableEnd="@drawable/baseline_remove_red_eye_24"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remember me"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FF9800"
+                        android:textSize="17dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I forgot my password"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="13dp"
+                        android:textColor="#FF9800"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/btnLogin"
+                    android:text="Login"
+                    android:backgroundTint="#FF9800"
+                    android:textSize="25dp"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OR"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="#FF9800"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center" ></LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>
